@@ -1,0 +1,107 @@
+<?xml version=”1.0” encoding=”UTF-8”?>
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.1//EN” “http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd”>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+  <head>
+    <title>My Guest Book</title>
+
+    <style type="text/css">
+      .formlabel {
+        font-weight: bold;
+        width: 250 px;
+        margin-bottom: 12px;
+        float: left;
+        text-align: left;
+        clear: left;
+      }
+
+      /formfield {
+        font-weight: normal;
+        margin-bottom: 12px;
+        float: left;
+        text-align: left;
+      }
+
+      input,
+      textarea,
+      select {
+        border: 1px solid black;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1> My Guest Book </h1>
+    <p>
+      Feel free to send me your opinion on my site via this GuestBook!
+    </p>
+    <form name="gbForm" method="post" action="mailto: suyogyarmj@gmail.com" enctype="text/plain">
+
+      <div class="formlabel">
+        Name:
+      </div>
+      <div class="formfield">
+        <input type="text" name="Name" size="50" />
+      </div>
+
+      <div class="formlabel">
+        Email:
+      </div>
+      <div class="formfield">
+        <input type="text" name="Email" size="50" />
+      </div>
+
+      <div class="formlabel">
+        Thoughts on my website. Please check all that apply:
+      </div>
+      
+      <div class="formfield">
+        <input type="checkbox" name="Website Quality" value="Good!" /> Good! <br />
+        <input type="checkbox" name="Website Quality" value="Average!" /> Average! <br />
+        <input type="checkbox" name="Website Quality" value="Needs work." /> Needs work <br />
+      </div>
+
+      <div class="formlabel">
+        Choose one thing you like the most on this website:
+      </div>
+      <div class="formfield">
+        <input type="radio" name="Like most about the website " value="information" /> The Information Provided. <br />
+        <input type="radio" name="Like most about the website " value="presentation" /> The Overall Presentation. <br />
+      </div>
+
+      <div class="formlabel">
+        If my website were a book how many copies would it sell?
+      </div>
+      <div class="formfield">
+        <select size="3" name="Sales">
+          <option value="Millions, for sure." selected="selected">Millions, for sure.</option>
+          <option value="NYTimes Bestseller.">NYTimes Bestseller.</option>
+        </select>
+      </div>
+
+      <div class="formlabel">
+        How can I improve my website?
+      </div>
+      <div class="formfield">
+        <select name="Suggestion">
+          <option value="Improve Presentation." selected="selected"> Improve Presentation.</option>
+          <option value="Improve Content."> Improve Content.</option>
+        </select>
+      </div>
+
+      <div class="formlabel">
+        Opinion:
+      </div>
+      <div class="formfield">
+        <textarea name="Comments" rows="4" cols="55"></textarea>
+      </div>
+
+      <div style="float:left;">
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </body>
+
+</html>

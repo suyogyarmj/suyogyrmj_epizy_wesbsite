@@ -1,0 +1,58 @@
+<? xml version = "1.0" encoding = "UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+
+<html>
+
+<head>
+<title> Test script.aculo.us and Browser Details </title>
+<link rel="stylesheet" type="text/css" href="mystyles.css?version2.0">
+<script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
+</head>
+<body>
+
+<h1 align ="center">
+Your current browser information:
+</h1>
+<script type = "text/javascript">
+
+  document.write("Code Name: " + navigator.appCodeName + "<br>");
+  document.write ("App name: "+ navigator.appName +"<br>"); 
+  document.write("App version: "+ navigator.appVersion +"<br>");
+  document.write("User agent: "+ navigator.userAgent +"<br>");
+  document.write("Language: "+ navigator.language +"<br>");
+  document.write("Platform: "+ navigator.platform +"<br>");
+
+</script>
+</br>
+</br>
+<h1>
+Testing script.aculo.us Effects
+</h1>
+<form name = "form1">
+
+<input type ="button" value ="Fade Out" onclick = "new Effect.Fade($('test'))">
+
+<input type ="button" value ="Fade In" onclick = "new Effect.Appear($('test'))">
+
+<input type ="button" value ="Slide Up" onclick= "new Effect.SlideUp($('test'))">
+
+<input type ="button" value ="Highlight" onclick = "new Effect.Highlight($('test'))">
+
+<input type ="button" value ="Shake" onclick = "new Effect.Shake($('test'))">
+
+</form>
+<div id ="test" style ="background-color:#CCC; margin:20px; padding:10px;">
+
+<h2>
+Testing Effects
+</h2>
+<hr/>
+<p>
+This section of the document is within &lt;div&gt; element with the id value of test. The event handlers on the buttons above send this object to the <a href ="http://script.aculo.us">script.aculo.us</a> library to preform effecrs. Click the buttons to see the effects.
+</p>
+</div>
+
+</body>
+</html>
